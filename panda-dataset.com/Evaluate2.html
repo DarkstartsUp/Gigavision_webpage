@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Task2 Evaluate | PANDA Dataset</title>
+    <link rel="icon" href="https://panda-website-1301093743.cos.ap-hongkong.myqcloud.com/images/logo/label-logo.png" sizes="32x32">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animsition.min.css">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i" rel="stylesheet"> -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elients and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="animsition">
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="index.html"><img src="https://panda-website-1301093743.cos.ap-hongkong.myqcloud.com/images/logo/panda-thu-logo.png" alt=" "></a>
+                    </div>
+                </div>
+                <!-- logo -->
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div id="navigation">
+                        <!-- navigation start-->
+                        <ul>
+                            <li class="active"><a href="index.html" class="animsition-link">Home</a></li>
+                            <li><a href="#" class="animsition-link">challenges</a><ul>
+                                <li><a href="Task1.html">Task1: Object Detection</a></li>
+                                <li><a href="Task2.html">Task2: Multi-Object Tracking</a></li>
+                            </ul></li>
+                            <li><a href="#" class="animsition-link">Evaluate</a><ul>
+                                <li><a href="Evaluate1.html">Task1: Object Detection</a></li>
+                                <li><a href="Evaluate2.html">Task2: Multi-Object Tracking</a></li>
+                            </ul></li>
+                            <!-- <li><a href="UnstructuredCam.html" class="animsition-link">UnstructuredCam</a></li>
+                            <li><a href="RUSH_Macroscopy.html" class="animsition-link">RUSH Macroscopy</a></li>
+                            <li><a href="http://www.gigavision.cn/" class="animsition-link">GigaVision</a></li> -->
+                            <li><a href="Download.html" class="animsition-link">Download</a></li>
+                            <!-- <li><a href="#" class="animsition-link">Leaderboards</a><ul>
+                                <li><a href="#">Task1: Object Detection</a></li>
+                                <li><a href="#">Task2: Multi-Object Tracking</a></li>
+                            </ul></li> -->
+                            <li><a href="FAQ.html" class="animsition-link">FAQ</a></li>
+                            <li><a href="Team.html" class="animsition-link">Team</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navigation start-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Evaluate</a></li>
+                            <li class="active">Task2</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-space20 bg-white">
+        <!-- content start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="wrapper-content bg-white">
+                        <div class="team-section text-justify pinside40">
+                            <div class="row">
+                                <h1>Results Format</h1>
+                                <p>We require the participator to submit the results as a single .zip file. Each .txt file in the .zip file contains the results of the corresponding image. Notably, the results of each image must be stored in the archive's root folder.</p>
+                                <p>The results file for each task should be stored in the SAME format as the provided ground-truth file, i.e., the JSON text-file containing one object instance per line. If there exists no output detection result, please provide an empty file. We suggest the participator reviewing the ground truth format before proceeding. For different tasks, each line in the text-file contains different content. Each text file stores the detection results of the corresponding image, with each line containing an object instance in the image. The format of each line is as follows:</p>
+                                <div class="section-space20 pinside20 bg-primary">
+                                    <h4>[frame_index], [target_id], [bbox_left], [bbox_top], [bbox_width], [bbox_height], [score], [object_category], [truncation], [occlusion]</h4>
+                                    <table border="1" width="80%" align="center">
+                                        <tbody align="center">
+                                            <tr>
+                                                <td>Position</td>
+                                                <td>Name</td>
+                                                <td>Description</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>[frame_index]</td>
+                                                <td>	
+                                                <p>In the DETECTION result file, the identity of the target should be set to the constant -1.</p> 
+                                                <p>In the GROUNDTRUTH file, the identity of the target is used to provide the temporal corresponding relation of the bounding boxes in different frames.</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>[target_id]</td>
+                                                <td>The y coordinate of the top-left corner of the predicted object bounding box</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>[bbox_left]</td>
+                                                <td>The x coordinate of the top-left corner of the predicted bounding box</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>[bbox_top]</td>
+                                                <td>The y coordinate of the top-left corner of the predicted object bounding box</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[bbox_width]</td>
+                                                <td>The width in pixels of the predicted object bounding box</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>[bbox_height]</td>
+                                                <td>The height in pixels of the predicted object bounding box</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>[score]</td>
+                                                <td><p>The score in the DETECTION file indicates the confidence of the predicted bounding box enclosing an object instance.</p> 
+                                                <p>The score in the GROUNDTRUTH file is set to 1 or 0. 1 indicates the bounding box is considered in evaluation, while 0 indicates the bounding box will be ignored.</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>[object_category]</td>
+                                                <td>The object category indicates the type of annotated object</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>[truncation]</td>
+                                                <td>The score in the DETECTION file should be set to the constant -1. The score in the GROUNDTRUTH file indicates the degree of object parts appears outside a frame</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>[occlusion]</td>
+                                                <td>	
+                                                    The score in the DETECTION file should be set to the constant -1.The score in the GROUNDTRUTH file indicates the fraction of objects being occluded</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                                <h1>Evaluation Metrics</h1>
+                                
+                                <p>Given an input video sequence, multi-object tracking aims to recover the trajectories of objects in the video. An evaluated algorithm is required to recover the trajectories of objects in video sequences with/without taking the object detection results as input. </p>
+                                <p>To evaluate the performance of multiple person tracking algorithms, we adopt the metrics of MOTChallenge [1], including MOTA, MOTP, IDF1, FAR, MT and Hz. Multiple Object Tracking Accuracy (MOTA) computes the accuracy considering three error sources: false positives, false negatives/missed targets and identity switches. Multiple Object Tracking Precision (MOTP) takes into account the misalignment between the groundtruth and the predicted bounding boxes. ID F1 score (IDF1) measures the ratio of correctly identified detections over the average number of ground-truth and computed detections. False alarm rate (FAR) measures the average number of false alarms per frame. The mostly tracked targets (MT) measures the ratio of ground-truth trajectories that are covered by a track hypothesis for at least 80\% of their respective life span. The Hz indicates the processing speed of the algorithm. For all evaluation metrics, except FAR, higher is better.  The evaluation code for Task 2 is available on the PANDA github.</p>               
+
+                               <h2>Reference</h2>
+                               <p>[1] Milan A, Leal-Taixé L, Reid I, et al. MOT16: A benchmark for multi-object tracking[J]. arXiv preprint arXiv:1603.00831, 2016. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.content end -->
+    
+    <div class="footer section-space20">
+        <!-- footer -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="widget-footer">
+                        <!-- widget footer -->
+                        <ul class="listnone">
+                            <li><a href="http://www.gigavision.cn">GigaVision</a></li>
+                            <li><a href="http://cvpr2019.thecvf.com/">IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019</a></li>
+                            <li><a href="https://eccv2020.eu/">The 2020 European Conference on Computer Vision (ECCV 2020)</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer -->
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="widget-footer">
+                        <!-- widget footer -->
+                        <ul class="listnone">
+                            <li><a href="http://www.luvision.net/">Smart Imaging Laboratory</a></li>
+                            <li>Email: <a href="mailto:zhang-xy18@mails.tsinghua.edu.cn">zhang-xy18@mails.tsinghua.edu.cn</a></li>
+                            <li>Postal addresses: Room 607, C2 building, Nanshanzhiyuan. Park, Xueyuan Ave. Num. 1001, Nanshan District, Shenzhen, China.</li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer -->
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="widget-footer">
+                        <!-- widget footer -->
+                        <ul class="listnone">
+                            <li><p>This work is supported in part by Natural Science Foundation of China (NSFC) under contract No. 61722209 and 61860206003.</p></li>
+                            <li><p>We thank <a href="http://www.aqueti.com/">Aqueti（China）Technology Inc., Co.</a> for providing part of raw datasets.</p></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.footer -->
+    <div class="tiny-footer">
+        <!-- tiny footer -->
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Industry-University-Research Collaboration is welcome via E-mail: fanglu at sz.tsinghua.edu.cn</br>
+                    Smart Imaging Lab, TBSI, Tsinghua University&nbsp;&nbsp;&nbsp;&nbsp;Copyright &copy; 2020 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.tiny footer -->
+    <!-- back to top icon -->
+    <a href="#0" class="cd-top" title="Go to top">Top</a>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/menumaker.js"></script>
+    <!-- animsition -->
+    <script type="text/javascript" src="js/animsition.js"></script>
+    <script type="text/javascript" src="js/animsition-script.js"></script>
+    <!-- sticky header -->
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/sticky-header.js"></script>
+    <!-- slider script -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/slider-carousel.js"></script>
+    <script type="text/javascript" src="js/service-carousel.js"></script>
+    <!-- Back to top script -->
+    <script src="js/back-to-top.js" type="text/javascript"></script>
+</body>
+
+</html>
+

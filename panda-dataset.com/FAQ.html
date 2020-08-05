@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>FAQ | PANDA Dataset</title>
+    <link rel="icon" href="https://panda-website-1301093743.cos.ap-hongkong.myqcloud.com/images/logo/label-logo.png" sizes="32x32">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animsition.min.css">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i" rel="stylesheet"> -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elients and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="animsition">
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="index.html"><img src="https://panda-website-1301093743.cos.ap-hongkong.myqcloud.com/images/logo/panda-thu-logo.png" alt=" "></a>
+                    </div>
+                </div>
+                <!-- logo -->
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div id="navigation">
+                        <!-- navigation start-->
+                        <ul>
+                            <li class="active"><a href="index.html" class="animsition-link">Home</a></li>
+                            <li><a href="index.html" class="animsition-link">ECCV2020 Challenge</a><ul>
+                                <li><a href="eccv-tasks.html">Tasks</a></li>
+                                <li><a href="eccv-evals.html">Evaluation</a></li>
+                            </ul></li>
+                            <!-- <li><a href="UnstructuredCam.html" class="animsition-link">UnstructuredCam</a></li>
+                            <li><a href="RUSH_Macroscopy.html" class="animsition-link">RUSH Macroscopy</a></li>
+                            <li><a href="http://www.gigavision.cn/" class="animsition-link">GigaVision</a></li> -->
+                            <li><a href="Download.html" class="animsition-link">Download</a></li>
+                            <!-- <li><a href="#" class="animsition-link">Leaderboards</a><ul>
+                                <li><a href="#">Task1: Object Detection</a></li>
+                                <li><a href="#">Task2: Multi-Object Tracking</a></li>
+                            </ul></li> -->
+                            <li><a href="FAQ.html" class="animsition-link">FAQ</a></li>
+                            <li><a href="Team.html" class="animsition-link">Team</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navigation start-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active">FAQ</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-space20 bg-white">
+        <!-- content start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="wrapper-content bg-white">
+                        <div class="team-section text-justify pinside40">
+                            <div class="row">
+                                <h1>FAQ</h1>
+                                <h3>1. Can external data be used during training?</h3>
+                                <p>Answer: We encourage the participants to use the provided training data, while also allow them to use additional training data. The use of external data must be indicated during submission. </p>
+
+                                <h3>2. Why there is no validation set?</h3>
+                                <p>As the number of scenarios in the panda data set is still limited so far, in order to ensure sufficient data for training and final testing, the authorities temporarily do not set the validation set that does not provide annotation files. If required by the algorithm researcher, the validation set can be separated from the training set freely.</p>
+
+                                <h3>3. Will the objects locating in the ignored regions be filtered out automatically in evaluation?</h3>
+                                <p>Answer: the bounding boxes in the submitted results overlapping the ignore regions locating in the ignored regions will be filtered out in the evaluation. This is done by <a href="https://github.com/cocodataset/cocoapi">COCO API</a> </p>
+
+                                <h3>4. In multi-object tracking tasks, do participating teams need to restore pedestrian trajectories based on public pedestrian detection results?</h3>
+                                <p>Answer: Unlike <a href="https://motchallenge.net/">MOTChallenge</a>, we do not require participating teams to use public test results in multi-object tracking tasks, nor is it officially provided.</p>
+
+                                <h3>5. I found an annotation error in the provided ground truth or a bug in the toolkit. </h3>
+                                <p>Answer: Thank you! We are aware of some deficiencies in the provided annotations and are still trying to improve these. We do appreciate all kinds of feedback, so please don’t hesitate to <a href="mailto:zhang-xy18@mails.tsinghua.edu.cn">contact us</a> to report any findings.</p>
+
+                                <h3>6. Where could I find the evaluation results of the challenge?</h3>
+                                <p>Answer: Teams need to submit their results on the <a href="https://www.biendata.com/competition/gigavision/">competition page</a>. After the team submits the results and after calculation, we will feedback the result to the team and add it on the leaderboard ASAP.</p>
+
+                                <!-- <h3>5. How could I register an account?</h3>
+                                <p>Answer: Due to the academic purpose of the released dataset, we require the participators to use the academic email or the company email to register the account. We do NOT allow the participators to use the commercial email address (e.g., gmail, hotmail, yahoo, outlook, live, qq, 163, and 126) to register the account. If your do NOT have an academic or company email, please contact us. Meanwhile, if you face any other registration failure, please also send us an email. Notably, registering multiple account with different email addresses of the same team violates the challenge policy, which may lead to a permanent ban.</p>
+
+                                <h3>6. Where could I find the evaluation results of the challenge?</h3>
+                                <p>Answer: Based on the policy of the challenge, the competition results will not be published until the ECCV 2020 workshop. As described in the test guidelines, for each algorithm, the number of submissions is limited to a maximum of three uploads total in the challenge. If you submit multiple entries, the best results will be used as your final results for the competition. After the workshop, we will publish the competition results on the leaderboard. You can also navigate there by clicking on your algorithm’s name in your account. </p>
+
+                                <h3>7. How could I rename my algorithm? </h3>
+                                <p>Answer: I you want to rename your algorithm, please contact us. </p> -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.content end -->
+    
+    <div class="footer section-space20">
+        <!-- footer -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="widget-footer">
+                        <!-- widget footer -->
+                        <ul class="listnone">
+                            <li><a href="http://www.gigavision.cn">GigaVision</a></li>
+                            <li><a href="http://cvpr2019.thecvf.com/">IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019</a></li>
+                            <li><a href="https://eccv2020.eu/">The 2020 European Conference on Computer Vision (ECCV 2020)</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer -->
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="widget-footer">
+                        <!-- widget footer -->
+                        <ul class="listnone">
+                            <li><a href="http://www.luvision.net/">Smart Imaging Laboratory</a></li>
+                            <li>Email: <a href="mailto:zhang-xy18@mails.tsinghua.edu.cn">zhang-xy18@mails.tsinghua.edu.cn</a></li>
+                            <li>Postal addresses: Room 607, C2 building, Nanshanzhiyuan. Park, Xueyuan Ave. Num. 1001, Nanshan District, Shenzhen, China.</li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer -->
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="widget-footer">
+                        <!-- widget footer -->
+                        <ul class="listnone">
+                            <li><p>This work is supported in part by Natural Science Foundation of China (NSFC) under contract No. 61722209 and 61860206003.</p></li>
+                            <li><p>We thank <a href="http://www.aqueti.com/">Aqueti（China）Technology Inc., Co.</a> for providing part of raw datasets.</p></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.footer -->
+    <div class="tiny-footer">
+        <!-- tiny footer -->
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Industry-University-Research Collaboration is welcome via E-mail: fanglu at sz.tsinghua.edu.cn</br>
+                    Smart Imaging Lab, TBSI, Tsinghua University&nbsp;&nbsp;&nbsp;&nbsp;Copyright &copy; 2020 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.tiny footer -->
+    <!-- back to top icon -->
+    <a href="#0" class="cd-top" title="Go to top">Top</a>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/menumaker.js"></script>
+    <!-- animsition -->
+    <script type="text/javascript" src="js/animsition.js"></script>
+    <script type="text/javascript" src="js/animsition-script.js"></script>
+    <!-- sticky header -->
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/sticky-header.js"></script>
+    <!-- slider script -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/slider-carousel.js"></script>
+    <script type="text/javascript" src="js/service-carousel.js"></script>
+    <!-- Back to top script -->
+    <script src="js/back-to-top.js" type="text/javascript"></script>
+</body>
+
+</html>
+

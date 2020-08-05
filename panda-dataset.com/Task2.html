@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Task2 | PANDA Dataset</title>
+    <link rel="icon" href="https://panda-website-1301093743.cos.ap-hongkong.myqcloud.com/images/logo/label-logo.png" sizes="32x32">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animsition.min.css">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i" rel="stylesheet"> -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elients and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="animsition">
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="index.html"><img src="https://panda-website-1301093743.cos.ap-hongkong.myqcloud.com/images/logo/panda-thu-logo.png" alt=" "></a>
+                    </div>
+                </div>
+                <!-- logo -->
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div id="navigation">
+                        <!-- navigation start-->
+                        <ul>
+                            <li class="active"><a href="index.html" class="animsition-link">Home</a></li>
+                            <li><a href="#" class="animsition-link">challenges</a><ul>
+                                <li><a href="Task1.html">Task1: Object Detection</a></li>
+                                <li><a href="Task2.html">Task2: Multi-Object Tracking</a></li>
+                            </ul></li>
+                            <li><a href="#" class="animsition-link">Evaluate</a><ul>
+                                <li><a href="Evaluate1.html">Task1: Object Detection</a></li>
+                                <li><a href="Evaluate2.html">Task2: Multi-Object Tracking</a></li>
+                            </ul></li>
+                            <!-- <li><a href="UnstructuredCam.html" class="animsition-link">UnstructuredCam</a></li>
+                            <li><a href="RUSH_Macroscopy.html" class="animsition-link">RUSH Macroscopy</a></li>
+                            <li><a href="http://www.gigavision.cn/" class="animsition-link">GigaVision</a></li> -->
+                            <li><a href="Download.html" class="animsition-link">Download</a></li>
+                            <!-- <li><a href="#" class="animsition-link">Leaderboards</a><ul>
+                                <li><a href="#">Task1: Object Detection</a></li>
+                                <li><a href="#">Task2: Multi-Object Tracking</a></li>
+                            </ul></li> -->
+                            <li><a href="FAQ.html" class="animsition-link">FAQ</a></li>
+                            <li><a href="Team.html" class="animsition-link">Team</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navigation start-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">challenges</a></li>
+                            <li class="active">Task2</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-space20 bg-white">
+        <!-- content start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="wrapper-content bg-white">
+                        <div class="team-section text-justify pinside40">
+                            <div class="row">
+                                <h1>Task2: Multi-Object Tracking</h1>
+                                <p><img src="https://panda-website-1301093743.cos.ap-hongkong.myqcloud.com/images/home/info2.jpg" alt="" align="middle" width="110%" /></p>
+                                <p>Object tracking aims to associate objects at different spatial positions and temporal frames. The superior properties of PANDA make it naturally suitable for long-term multi-object tracking. Yet the complex scenes with crowded pedestrian impose various challenges as well.</p>
+                                <h2>Part 1: Multi-pedestrian tracking</h2>
+                                <h3>Overview</h3>
+                                <p>Given an input video sequence, the Multi-Object Tracking Challenge (Task 2) requires the participating algorithms to recover the trajectories of pedestrians in the video. There will be 2 sub-tasks: Multi-pedestrian tracking with/without public detection results. The challenge will provide 15 challenging sequences, including 10 video sequences for training (24,201 frames in total) and 5 sequences for testing (12,968 frames in total), which are available on the download page. We manually annotate the bounding boxes of pedestrians in each video frame. In addition, we also provide two kinds of useful annotations, i.e., occlusion degree and face orientation of each person. Annotations on the training sets are publicly available. Please also see the Download page for more details.</p>
+                                <h3>Challenge Guidelines</h3>
+                                <p>The multi-object tracking evaluation page lists detailed information regarding how submissions will be scored. To limit overfitting while providing researchers more flexibility to test their algorithms, we have divided the test set into two splits, including test-challenge and test-dev. Test-dev (3 video clips) is designed for debugging and validation experiments and allows for unlimited submission. The up-to-date results of the test-dev set are available to view on the leaderboard of multi-object tracking.</p>
+                                <p>We encourage the participants to use the provided training data, while also allow them to use additional training data. The use of external data must be indicated during submission.</p>
+                                <p>The train video clips and corresponding annotations as well as the video clips in the test-challenge set are available on the download page. Before participating, every user is required to create an account using an institutional email address. If you have any problem in registration, please contact us. After registration, the users should submit the results in their accounts. The submitted results will be evaluated according to the rules described on the evaluation page. Please refer to the evaluation page for detailed explanation.</p>
+                                <h3>Tools and Instructions</h3>
+                                <p>We provide extensive API support for the PANDA images, annotation and evaluation code. Please visit our GitHub repository to download the PANDA API. For addition questions, please find the answers here or contact us.</p>
+
+                                <h2>Part 2: Multi-vehicle tracking</h2>
+                                <p>TBD</p>
+
+                               <h2>Citation</h2>
+                               <p>When using our datasets in your research, please cite:</p>
+                                <p>
+                                    @inproceedings{yuan2017multiscale,<br>
+                                        title={Multiscale gigapixel video: A cross resolution image matching and warping approach},<br>
+                                        author={Yuan, Xiaoyun and Fang, Lu and Dai, Qionghai and Brady, David J and Liu, Yebin},<br>
+                                        booktitle={Computational Photography (ICCP), 2017 IEEE International Conference on},<br>
+                                        pages={1--9},<br>
+                                        year={2017},<br>
+                                        organization={IEEE}<br>
+                                        }
+                                </p>
+                                <h2>Privacy</h2>
+                                <p>This dataset is for non-commercial use only. However, if you find yourself or your personal belongings in the data, please <a href="malito:zhang-xy18@mails.tsinghua.edu.cn">contact us</a>, and we will immediately remove the respective images from our servers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.content end -->
+    
+    <div class="footer section-space20">
+        <!-- footer -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="widget-footer">
+                        <!-- widget footer -->
+                        <ul class="listnone">
+                            <li><a href="http://www.gigavision.cn">GigaVision</a></li>
+                            <li><a href="http://cvpr2019.thecvf.com/">IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019</a></li>
+                            <li><a href="https://eccv2020.eu/">The 2020 European Conference on Computer Vision (ECCV 2020)</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer -->
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="widget-footer">
+                        <!-- widget footer -->
+                        <ul class="listnone">
+                            <li><a href="http://www.luvision.net/">Smart Imaging Laboratory</a></li>
+                            <li>Email: <a href="mailto:zhang-xy18@mails.tsinghua.edu.cn">zhang-xy18@mails.tsinghua.edu.cn</a></li>
+                            <li>Postal addresses: Room 607, C2 building, Nanshanzhiyuan. Park, Xueyuan Ave. Num. 1001, Nanshan District, Shenzhen, China.</li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer -->
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="widget-footer">
+                        <!-- widget footer -->
+                        <ul class="listnone">
+                            <li><p>This work is supported in part by Natural Science Foundation of China (NSFC) under contract No. 61722209 and 61860206003.</p></li>
+                            <li><p>We thank <a href="http://www.aqueti.com/">Aqueti（China）Technology Inc., Co.</a> for providing part of raw datasets.</p></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.footer -->
+    <div class="tiny-footer">
+        <!-- tiny footer -->
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Industry-University-Research Collaboration is welcome via E-mail: fanglu at sz.tsinghua.edu.cn</br>
+                    Smart Imaging Lab, TBSI, Tsinghua University&nbsp;&nbsp;&nbsp;&nbsp;Copyright &copy; 2020 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.tiny footer -->
+    <!-- back to top icon -->
+    <a href="#0" class="cd-top" title="Go to top">Top</a>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/menumaker.js"></script>
+    <!-- animsition -->
+    <script type="text/javascript" src="js/animsition.js"></script>
+    <script type="text/javascript" src="js/animsition-script.js"></script>
+    <!-- sticky header -->
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/sticky-header.js"></script>
+    <!-- slider script -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/slider-carousel.js"></script>
+    <script type="text/javascript" src="js/service-carousel.js"></script>
+    <!-- Back to top script -->
+    <script src="js/back-to-top.js" type="text/javascript"></script>
+</body>
+
+</html>
+

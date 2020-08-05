@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Download | PANDA Dataset</title>
+    <link rel="icon" href="https://panda-website-1301093743.cos.ap-hongkong.myqcloud.com/images/logo/label-logo.png" sizes="32x32">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animsition.min.css">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i" rel="stylesheet"> -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elients and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="animsition">
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="index.html"><img src="https://panda-website-1301093743.cos.ap-hongkong.myqcloud.com/images/logo/panda-thu-logo.png" alt=" "></a>
+                    </div>
+                </div>
+                <!-- logo -->
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div id="navigation">
+                        <!-- navigation start-->
+                        <ul>
+                            <li class="active"><a href="index.html" class="animsition-link">Home</a></li>
+                            <li><a href="index.html" class="animsition-link">ECCV2020 Challenge</a><ul>
+                                <li><a href="eccv-tasks.html">Tasks</a></li>
+                                <li><a href="eccv-evals.html">Evaluation</a></li>
+                            </ul></li>
+                            <!-- <li><a href="UnstructuredCam.html" class="animsition-link">UnstructuredCam</a></li>
+                            <li><a href="RUSH_Macroscopy.html" class="animsition-link">RUSH Macroscopy</a></li>
+                            <li><a href="http://www.gigavision.cn/" class="animsition-link">GigaVision</a></li> -->
+                            <li><a href="Download.html" class="animsition-link">Download</a></li>
+                            <!-- <li><a href="#" class="animsition-link">Leaderboards</a><ul>
+                                <li><a href="#">Task1: Object Detection</a></li>
+                                <li><a href="#">Task2: Multi-Object Tracking</a></li>
+                            </ul></li> -->
+                            <li><a href="FAQ.html" class="animsition-link">FAQ</a></li>
+                            <li><a href="Team.html" class="animsition-link">Team</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navigation start-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active">Download</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-space20 bg-white">
+        <!-- content start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="wrapper-content bg-white">
+                        <div class="team-section text-justify pinside40">
+                            <div class="row">
+                                <h1>Overview</h1>
+                                <!-- <h2>Dataset Overview</h2> -->
+                                <p>Depending on the data type, the PANDA dataset is split into 2 sub-sets: <code>PANDA-Image</code> and <code>PANDA-Video</code>. Among them, PANDA-Image is composed of 555 static giga-pixel images (390 for training, 165 for testing), and PANDA-Video is composed of 15 giga-pixel video sequences (10 videos for training, 5 videos for testing). Please refer to our <a href="https://arxiv.org/abs/2003.04852">paper</a> for detailed information of pictures and videos in each scene.</p>
+
+                                <p>Since existing video compression formats such as H264 cannot handle the extremely high resolution of the PANDA dataset, the videos in panda-video are split into image frames (<em><strong>.jpg</strong> format</em> ) for storage. Moreever, from the point of view of data storage and download, in order to make the total volume of data not too large, swe take time sampling on the videos and the <strong>frame rate of the videos is 2 FPS.</strong></p>
+
+                                <p>Before downloading the data, you need to read the copyright terms of the dataset, agree to our licence, and submit the application for using the dataset to us by email. Please refer to the Copyright & Download section below for details.</p>
+
+
+                                <h1>Copyright</h1>
+                                <p>The PANDA dataset is available for the <strong>academic purpose only</strong>. Any researcher who uses the PANDA dataset should obey the licence as below:</p>
+                                <p>All of the PANDA Dataset (data, annotation and software) are copyright by Smart Imaging Laboratory, Tsinghua-Berkeley Shenzhen Institute and published under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 License</a>. This means that you must attribute the work in the manner specified by the authors, you may not use this work for commercial purposes and if you alter, transform, or build upon this work, you may distribute the resulting work only under the same license.</p>
+
+                                <p>This dataset is for non-commercial use only. However, if you find yourself or your personal belongings in the data, please <a href="mailto:zhang-xy18@mails.tsinghua.edu.cn">contact us</a>, and we will immediately remove the respective images from our servers.</p>
+                              
+                                
+                                <h1>Download</h1>
+                                <p>At present, we provide the data of image and video sequence of PANDA data set, as well as the bounding box (and corresponding labels) annotation of the training set. Group and interaction annotations are being prepared, please stay tuned.</p>
+
+                                <div class="section-space20 pinside20 bg-primary">
+                                    <p>To download the PANDA dataset, please agree on the license and provide the below information via email.  We will only take applications from organization email (please DO NOT use the emails from gmail/163/qq). Anyone who uses the PANDA  dataset should obey the license and send us an email for registration.</p>
+                                    <h4>Please use the following email template:</h4>
+                                    <p>
+                                    -----------------------------------------------------------<br>
+                                    To: zhang-xy18@mails.tsinghua.edu.cn<br>
+                                    Subject: Apply for Using PANDA Dataset<br>
+                                    <br> 
+                                    I am aware of PANDA Terms of Use and I confirm to comply with it.<br>
+                                    <br>  
+                                    Name:<br>
+                                    Organization:<br>
+                                    Email:<br>
+                                    Tel:<br>
+                                    -----------------------------------------------------------
+                                    </p>
+                                </div>
+
+                                <h1>Annotation Description</h1>
+
+                                <h2>File structure</h2>
+                                <p>For PANDA-Image, the training image and test image are stored in two compression packages respectively. The directory after the decompression contains the folders of each scene named after the scene name, each folder contains the pictures belonging to each scene.</p>
+
+                                <P>For PANDA-Video, each video sequence is stored in a separate compression package. The compressed folder is named after the scene name and contains the frame images of the video sequences.</P>
+
+                                <h2>Annotation Formats</h2>
+                                <h3>PANDA-Image</h3>
+                                <p>The two files <code>human_bbox_train.json</code> and <code>vehicle_bbox_train.json</code> respectively contain the annotations of the pedestrians and vehicles in the images for training set. <code>human_bbox_test.json</code> and <code>vehicle_bbox_test.json</code> only contain <code>image_filepath</code>, <code>image id</code> and <code>image size</code> for testing set. Please note that for the results on the test set to submit, <strong>the image id should be the same as in the annotation file.</strong></p>
+                                <h4>human_bbox_train.json</h4>       
+
+                                <code>
+                                    JSON{
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image_filepath : image_dict, </div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... </div>
+                                    <div>}</div>
+
+                                    <div>image_dict{</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"image id" : int,</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"image size" : image_size, </div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"objects list" : [object_dict], </div>
+                                        <div>}</div>
+
+                                    <div>image_size{</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"height" : int,</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"width" : int, </div>
+                                    <div>}</div>
+
+                                    <div><strong>If the object is a <code>person</code>:</strong></div>
+                                    <div>object_dict{</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"category" : "person",</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"pose" : "standing" or "walking" or "sitting" or "riding" or "held" (a baby in the arms) or "unsure",</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"riding type" : "bicycle rider" or "motorcycle rider" "tricycle rider" or "null" (when "pose" is not "riding"),</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"age" : "adult" or "child" or "unsure",</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"rects" : rects, </div>
+                                    <div>}</div>
+
+                                    <div>rects{</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"head" : rect_dict,</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"visible body" : rect_dict,</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"full body" : rect_dict,</div>
+                                    <div>}</div>
+
+                                    <div><strong>If this box is <code>crowd/reflection/something like person/...</code> and need to be <code>ignore</code>:</strong></div>
+                                    <div>object_dict{</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"category" : "ignore" (someone who is heavily occluded) or "fake person" or "crowd" (extremely dense crowd),</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"rect" : rect_dict, </div>
+                                    <div>}</div>
+
+                                    <div>rect_dict{</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tl" : {</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"x" : float,</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"y" : float,</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"br" : {</div>
+                                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"x" : float,</div>
+                                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"y" : float,</div>
+                                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div>
+                                        }
+                                </code>
+
+                                <ul><li><code>image_filepath</code> is the relative path of the image</li>
+                                    <li><code>"category"</code> is the key that determines whether the target box is a pedestrian or a special area that needs to be ignored. A pedestrian can only be <code>"person"</code></li>
+                                    <li><code>"riding type"</code> is not <code>"null"</code> only if <code>"category"</code> is <code>"riding"</code></li>
+                                    <li><code>"x"</code> and <code>"y"</code> are floating point numbers between 0 and 1, representing the ratio of the coordinates to the width and height of the image, respectively</li>
+                                </ul>
+
+                                <h4>vehicle_bbox_train.json</h4>   
+
+                                <code>
+                                    JSON{
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image_filepath : image_dict, </div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... </div>
+                                    <div>}</div>
+
+                                    <div>image_dict{</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"image id" : int,</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"image size" : image_size, </div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"objects list" : [object_dict], </div>
+                                        <div>}</div>
+
+                                    <div>image_size{</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"height" : int,</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"width" : int, </div>
+                                    <div>}</div>
+
+                                    <div>object_dict{</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"category" : "small car" or "midsize car" or "large car" or "bicycle" or "motorcycle" or "tricycle" or "electric car" or "baby carriage" or "vehicles" or "unsure", </div>
+                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"rect" : rect_dict, </div>
+                                    <div>}</div>
+
+                                    <div>rect_dict{</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tl" : {</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"x" : float,</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"y" : float,</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"br" : {</div>
+                                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"x" : float,</div>
+                                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"y" : float,</div>
+                                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div>
+                                        }
+                                </code>
+
+                                <ul><li><code>image_filepath</code> is the relative path of the image</li>
+                                    <li><code>"vehicles"</code>refers to a dense vehicle group and should be ignored</li>
+                                    <li><code>"small car"</code>, <code>"midsize car"</code> and <code>"large car"</code> belong to motor vehicles with four or more wheels and are distinguished by vehicle size. <code>"electric car"</code> refers to an electric sightseeing car or patrol car, etc.</li>
+                                    <li><code>"x"</code> and <code>"y"</code> are floating point numbers between 0 and 1, representing the ratio of the coordinates to the width and height of the image, respectively</li>
+                                </ul>
+
+                                <h3>PANDA-Video</h3>
+                                <P>The annotation files for each video sequence in PANDA-Video include two: <code>tracks.json</code> and <code>seqinfo.json</code> respectively contain the pedestrian trajectory annotation and the basic information of the video sequence. The annotation file for each video sequence is stored in a folder named after the scene name.</P>
+
+                                <h4>tracks.json</h4> 
+
+                                    <code>
+                                        JSON{
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[track_dict], </div>
+                                        <div>}</div>
+
+                                        <div>track_dict{</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"track id" : int,</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"frames" : [frame_dict], </div>
+                                        <div>}</div>
+
+                                        <div>frame_dict{</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"frame id" : int,</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"rect" : rect_dict, </div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"face orientation" : "back" or "front" or "left" or "left back" or "left front" or "right" or "right back" or "right front" or "unsure",</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"occlusion" : "normal" or "hide" or "serious hide" or "disappear", </div>
+                                        <div>}</div>
+
+                                        <div>rect_dict{</div>
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tl" : {</div>
+                                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"x" : float,</div>
+                                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"y" : float,</div>
+                                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</div>
+                                            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"br" : {</div>
+                                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"x" : float,</div>
+                                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"y" : float,</div>
+                                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div>
+                                            }
+                                    </code>
+    
+                                    <ul><li>Both <code>"frame id"</code> and <code>"track id"</code> count from 1</li>
+                                        <li>In <code>"face orientation"</code>, <code>"front"</code> means facing the camera</li>
+                                        <li>In <code>"occlusion"</code>, <code>"normal"</code> means the occlusion rate is less than 10%, <code>"hide"</code> means the occlusion rate is between 10% and 50%, <code>"serious hide"</code> means the occlusion rate is greater than 50%, and <code>"disappear"</code> means the object completely disappears</li>
+                                        <li><code>"x"</code> and <code>"y"</code> are floating point numbers between 0 and 1, representing the ratio of the coordinates to the width and height of the image, respectively</li>
+                                    </ul>
+
+                                    <h4>seqinfo.json</h4>
+                                    <code>
+                                        JSON{
+                                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name" : scene_name,
+                                        </div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"frameRate" : int,
+                                        </div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"seqLength" : int,
+                                        </div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"imWidth" : int,
+                                        </div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"imHeight" : int,
+                                        </div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"imExt" : file_extension,
+                                        </div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"imUrls" : [image_url]
+                                        </div>}
+                                    </code>
+
+                                <h1>Citation</h1>
+                                <h4>All technical papers, documents and reports which use the PANDA dataset will acknowledge the use of the database and a citation to:</h4>
+                                <p>
+                                    @inproceedings{wang2020panda,
+                                        title={PANDA: A Gigapixel-level Human-centric Video Dataset},
+                                        author={Wang, Xueyang and Zhang, Xiya and Zhu, Yinheng and Guo, Yuchen and Yuan, Xiaoyun and Xiang, Liuyu and Wang, Zerun and Ding, Guiguang and Brady, David J and Dai, Qionghai and Fang, Lu},
+                                        booktitle={Computer Vision and Pattern Recognition (CVPR), 2020 IEEE International Conference on},
+                                        year={2020},
+                                        organization={IEEE}
+                                        }
+                                </p>                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.content end -->
+    
+    <div class="footer section-space20">
+        <!-- footer -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="widget-footer">
+                        <!-- widget footer -->
+                        <ul class="listnone">
+                            <li><a href="http://www.gigavision.cn">GigaVision</a></li>
+                            <li><a href="http://cvpr2019.thecvf.com/">IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019</a></li>
+                            <li><a href="https://eccv2020.eu/">The 2020 European Conference on Computer Vision (ECCV 2020)</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer -->
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="widget-footer">
+                        <!-- widget footer -->
+                        <ul class="listnone">
+                            <li><a href="http://www.luvision.net/">Smart Imaging Laboratory</a></li>
+                            <li>Email: <a href="mailto:zhang-xy18@mails.tsinghua.edu.cn">zhang-xy18@mails.tsinghua.edu.cn</a></li>
+                            <li>Postal addresses: Room 607, C2 building, Nanshanzhiyuan. Park, Xueyuan Ave. Num. 1001, Nanshan District, Shenzhen, China.</li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer -->
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="widget-footer">
+                        <!-- widget footer -->
+                        <ul class="listnone">
+                            <li><p>This work is supported in part by Natural Science Foundation of China (NSFC) under contract No. 61722209 and 61860206003.</p></li>
+                            <li><p>We thank <a href="http://www.aqueti.com/">Aqueti（China）Technology Inc., Co.</a> for providing part of raw datasets.</p></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget footer -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.footer -->
+    <div class="tiny-footer">
+        <!-- tiny footer -->
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Industry-University-Research Collaboration is welcome via E-mail: fanglu at sz.tsinghua.edu.cn</br>
+                    Smart Imaging Lab, TBSI, Tsinghua University&nbsp;&nbsp;&nbsp;&nbsp;Copyright &copy; 2020 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.tiny footer -->
+    <!-- back to top icon -->
+    <a href="#0" class="cd-top" title="Go to top">Top</a>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/menumaker.js"></script>
+    <!-- animsition -->
+    <script type="text/javascript" src="js/animsition.js"></script>
+    <script type="text/javascript" src="js/animsition-script.js"></script>
+    <!-- sticky header -->
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/sticky-header.js"></script>
+    <!-- slider script -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/slider-carousel.js"></script>
+    <script type="text/javascript" src="js/service-carousel.js"></script>
+    <!-- Back to top script -->
+    <script src="js/back-to-top.js" type="text/javascript"></script>
+</body>
+
+</html>
+
