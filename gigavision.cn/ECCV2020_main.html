@@ -1,372 +1,403 @@
+
 <html lang="en">
-<head>
+  <head>
+  
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ECCV2020 | Gigavision Workshop</title>
+  
+  <!-- PLUGINS CSS STYLE -->
+  <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Owl Carousel -->
+  <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet">
+  <link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
+  <!-- Fancy Box -->
+  <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
+  <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+  <link href="plugins/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+  </head>
+  
+  <body class="body-wrapper">
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg  navigation"> <a class="navbar-brand" href="index.html"> <img src="images/demo.png" alt="" width="240px"> </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto main-nav">
+                  <li class="nav-item active"> <a class="nav-link" href="index.html">Home</a> </li>
 
-<!-- SITE TITTLE -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home | Gigavision Workshop</title>
-
-<!-- PLUGINS CSS STYLE -->
-<link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
-<!-- Bootstrap -->
-<link href="plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Font Awesome -->
-<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-<!-- Owl Carousel -->
-<link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet">
-<link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
-<!-- Fancy Box -->
-<link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
-<link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
-<link href="plugins/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css" rel="stylesheet">
-<!-- CUSTOM CSS -->
-<link href="css/style.css" rel="stylesheet">
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-</head>
-
-<body class="body-wrapper">
-  <section>
+                  <li class="nav-item"> <a class="nav-link " href="ICCV2021.html">ICCV 2021</a> </li>
+                  
+                  <li class="nav-item"> <a class="nav-link " href="ICIP2021_main.html">ICIP 2021</a> </li>
+  
+                  <li class="nav-item"> <a class="nav-link " href="ACMMM2021_main.html">ACMMM 2021</a> </li>
+  
+  
+                  <li class="nav-item dropdown dropdown-slide">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Previous</a>
+                    <!-- Dropdown list -->
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="CVPR2019_main.html">CVPR 2019 Workshop</a>
+                      <a class="dropdown-item" href="ECCV2020_main.html">ECCV 2020 Workshop</a>
+                    </div>
+                  </li>
+  
+                  <li class="nav-item"> <a class="nav-link " href="http://www.panda-dataset.com/index.html">PANDA Dataset</a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="people.html">People</a> </li>
+                </ul>
+                
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+  <!--==========================================
+  =            Speakers Section            =
+  ===========================================-->
+  
+  <section class="popular-deals section bg-gray"> 
+    <!-- Container Start -->
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <nav class="navbar navbar-expand-lg  navigation"> <a class="navbar-brand" href="index.html"> <img src="images/demo.png" alt="" width="240px"> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto main-nav ">
-                <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
-                <li class="nav-item dropdown dropdown-slide">
-                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ECCV 2020 Workshop</a>
-                  <!-- Dropdown list -->
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="ECCV2020_main.html">Details</a>
-                    <a class="dropdown-item" href="ECCV2020_challenge.html">Challenge</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown dropdown-slide active">
-                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CVPR2019 Workshop</a>
-                  <!-- Dropdown list -->
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="CVPR2019_main.html">Details</a>
-                  </div>
-                </li>
-                <li class="nav-item"> <a class="nav-link " href="http://www.panda-dataset.com/index.html">PANDA Dataset</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="people.html">People</a> </li>
-              </ul>
-              
-            </div>
-          </nav>
+        <div class="col-md-12"> 
+          <!-- Section title -->
+          <div class="section-title">
+            <h2>Speakers</h2>
+          </div>
+          <p align="center"><img src="https://panda-website-1301093743.cos.ap-hongkong.myqcloud.com/schedule.png" width="100%"></p>
         </div>
       </div>
     </div>
   </section>
+  
 
-<!--===========================================
-=            Call for Papers Section            =
-============================================-->
+  <!--==========================================
+  =            Winners Section            =
+  ===========================================-->
 
-<section class="popular-deals section bg-gray">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="section-title">
-          <h2>Call for Papers</h2>
-        </div>
-        <p align="justify"> While the latest development of array cameras has realized the gigapixel videography of large-scale dynamic scenes, the corresponding computer vision tasks remain unsolved, restricted by the extremely high spatial resolution, signiﬁcant scale variation, huge data throughput. How can AI help with the array camera to achieve REAL smart? Along with the revolution of high performance imag- ing, what are the opportunities and challenges for computer vision? They are open questions demanding prompt solutions.</p>
-        <p align="justify"> To this end, we solicit original and ongoing research addressing the topics listed below (but not limited to):</p>
-        <ul>
-          <li>Long-term multi-target object tracking</li>
-          <li>Large-scale generic object detection</li>
-          <li>Large-scale human action recognition</li>
-          <li>Large-scale face detection/recognition</li>
-          <li>Gigapixel video compression and streaming</li>
-          <li>Optoelectronic Computing</li>
-        </ul>
-        <p align="justify">Speciﬁcally, half-day presentations from keynote speakers and challenges will be held. The tentative speakers include Prof. Silvio Savarese (Stanford University), Prof. Shaogang Gong (Queen Mary University of London), Prof. Stanley Chan (Purdue University), Prof. Eric R. Fossum (Dartmouth University), Prof. Ren Ng (University of California, Berkeley), and Prof. Ming-Hsuan Yang (University of California, Merced). The challenge covers large-scale object detection and long-term multi-object tracking on PANDA.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--===========================================
-=            Important Dates Section            =
-============================================-->
-
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="section-title">
-          <h2>Important Dates</h2>
-        </div>
-        TBD
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--==========================================
-=            Speakers Section            =
-===========================================-->
-
-<section class="popular-deals section bg-gray"> 
-  <!-- Container Start -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12"> 
-        <!-- Section title -->
-        <div class="section-title">
-          <h2>Speakers</h2>
-        </div>
-        TBD
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--==========================================
-=            Important Dates Section            =
-===========================================-->
-
-<section class="section"> 
-  <!-- Container Start -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12"> 
-        <!-- Section title -->
-        <div class="section-title">
-          <h2>Technical Program (Tentative)</h2>
-        </div>
-        TBD
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--==========================================
-=            Organizers Section            =
-===========================================-->
-
-<section class="popular-deals section bg-gray"> 
-  <!-- Container Start -->
-  <div class="container">
-    <div class="row">
-      <div class="col-12"> 
-        <!-- Section title -->
-        <div class="section-title">
-          <h2>Organizers</h2>
-        </div>
-        <div class="row"> 
-		  <!-- Organizers list -->
-          <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
-            <div class="category-block">
-              <table width="100%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="images/eccv2020/Fang.jpg" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="http://luvision.net/">Lu Fang</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p>Tsinghua-Berkeley Shenzhen Institute, Tsinghua University</p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+  <section class="section"> 
+    <!-- Container Start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"> 
+          <!-- Section title -->
+          <div class="section-title">
+            <!-- <h2>Background and Relevance</h2> -->
+            <h2>GigaVision 2020 Visual Challenge Winners</h2>
           </div>
-          <!-- /Organizers List --> 
-          <!-- Organizers list -->
-          <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
-            <div class="category-block">
-              <table width="100%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="images/eccv2020/Wang.jpg" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="http://www.ee.tsinghua.edu.cn/publish/ee/4157/2010/20101217174758325963112/20101217174758325963112_.html">Shengjin Wang</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p>Tsinghua University</p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <!-- <p align="justify">The proposed GigaVision workshop is associated with <b>‘PANDA’</b>, <b>the world-first gigaPixel-level humAN-centric viDeo dAtaset</b>, for large-scale, long-term, and multi-object visual analysis. The videos in PANDA were captured by a gigapixel camera and cover real-world large-scale scenes with both wide field-of-view (<b>~1km^2 area</b>) and high resolution details (<b>~gigapixel-level/frame</b>). The scenes may contain <b>4k</b> head counts with over <b>100×</b> scale variation, as shown in Fig. 2. PANDA provides enriched and hierarchical ground-truth annotations, including <b>15,974.6k</b> bounding boxes, <b>111.8k</b> fine-grained attribute labels, <b>12.7k</b> trajectories, <b>2.2k</b> groups and <b>2.9k</b> interactions. Due to the vast variance of pedestrian pose, scale, occlusion and trajectory, existing computer vision tasks will be highly challenged by both accuracy and efficiency. Therefore, GigaVision workshop aims to bring the community’s attention on the visual analysis of complicated behaviors and interactions of crowd in large-scale real-world scenes. During the workshop, half-day presentations from keynote speakers, and half-day challenges will be held.</p>
+          <p align="center"><img src="images/eccv2020/teaser.jpg" width="100%"></p>
+          <p align="center"><font size="-1">Figure 1: A representative video Marathon of <i>PANDA</i> dataset.</font></p>
+          <p align="center"><img src="images/eccv2020/annotation.jpg" width="60%"></p>
+          <p align="center"><font size="-1">Figure 2: Visualization of features of PANDA dataset. (a) The scale variation of pedestrians in a large-scale scene. (b) Three ﬁne-grained bounding box an- notations of the human body. (c) Annotations of ﬁve types of human poses.
+            (d) Group information along with the intra-group interactions (TK=Talking, PC=Physical contact), where the circle and short line denote pedestrian and their face orientation.</font></p> -->
+          <p align="center"><img src="https://panda-website-1301093743.cos.ap-hongkong.myqcloud.com/winners.png" width="60%"></p>
           </div>
-          <!-- /Organizers List --> 
-		  <!-- Organizers list -->
-          <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
-            <div class="category-block">
-              <table width="100%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="images/eccv2020/Brady.jpg" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://ece.duke.edu/faculty/david-brady">David J. Brady</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p>Duke University</p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+    </div>
+    <!-- Container End --> 
+  </section>
+
+  
+  <!--===========================================
+  =            Call for Papers Section            =
+  ============================================-->
+  
+  <!-- <section class="popular-deals section bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title">
+            <h2>Call for Papers</h2>
           </div>
-          <!-- /Organizers List --> 
-		  
-          <!-- Organizers list -->
-          <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
-            <div class="category-block">
-              <table width="100%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="200px">
-                    <td><img src="images/eccv2020/Yang.jpg" alt="" class="rounded-circle" width="60%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="http://www.cs.cmu.edu/~fengy/">Feng Yang</a></h5></td>
-                  </tr>
-                  <tr height="60px">
-                    <td><p>Google Research</p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <p align="justify"> While the latest development of array cameras has realized the gigapixel videography of large-scale dynamic scenes, the corresponding computer vision tasks remain unsolved, restricted by the extremely high spatial resolution, signiﬁcant scale variation, huge data throughput. How can AI help with the array camera to achieve REAL smart? Along with the revolution of high performance imag- ing, what are the opportunities and challenges for computer vision? They are open questions demanding prompt solutions.</p>
+          <p align="justify"> To this end, we solicit original and ongoing research addressing the topics listed below (but not limited to):</p>
+          <ul>
+            <li>Long-term multi-target object tracking</li>
+            <li>Large-scale generic object detection</li>
+            <li>Large-scale human action recognition</li>
+            <li>Large-scale face detection/recognition</li>
+            <li>Gigapixel video compression and streaming</li>
+            <li>Optoelectronic Computing</li>
+          </ul>
           </div>
-          <!-- /Organizers List --> 
+      </div>
+    </div>
+  </section> -->
+  
+  <!--===========================================
+  =            Important Dates Section            =
+  ============================================-->
+  
+  <!-- <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title">
+            <h2>Important Dates</h2>
+          </div>
+          TBD
         </div>
       </div>
     </div>
-  </div>
-  <!-- Container End --> 
-</section>
-
-
-<!--=====================================
-=            Sponsor Section            =
-======================================-->
-
-<section class="section"> 
-  <!-- Container Start -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12"> 
-        <!-- Section title -->
-        <div class="section-title">
-          <h2>Sponsors</h2>
-        </div>
-        <p align="center">
-            <img src="images/home/logo1.png" width="20%">
-            <img src="images/home/logo_BBNC.png" width="20%">
-            <a href="http://www.aqueti.com/"><img src="images/home/aqueti.png" width="15%"></a>
-            <img src="images/home/camputer_lab.jpg" width="15%">
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- Container End --> 
-</section>
-
-<!--============================
-=            Footer            =
-=============================-->
-
-<footer class="footer section section-sm"> 
-  <!-- Container Start -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0"> 
-        <!-- About -->
-        <div class="block about"> 
-          <!-- footer logo -->
-          <table width="200" border="0">
-            <tbody align="center">
-              <tr>
-                <td colspan="2"><img src="images/demo.png" alt="" width="200px"></td>
-              </tr>
-              <tr>
-                <td><img src="images/footer/THU.png" alt="" width="80px"></td>
-                <td><img src="images/footer/UCB.png" alt="" width="80px"></td>
-              </tr>
-            </tbody>
-          </table>
-          <!-- description -->
-          <p class="alt-color"></p>
-        </div>
-      </div>
-      <!-- Link list -->
-      <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
-        <div class="block">
-          <h4>Useful Links</h4>
-          <p>&#9679; <a href="https://eccv2020.eu/"><font color=#666>European Conference on Computer Vision (ECCV) 2020</font></a></p>
-          <p>&#9679; <a href="http://cvpr2019.thecvf.com/"><font color=#666>IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019</font></a></p>
-          <p>&#9679; <a href="http://www.icme2019.org/"><font color=#666>IEEE International Conference on Multimedia and Expo (ICME) 2019</font></a></p>
-          <p>&#9679; <a href="http://www.panda-dataset.com/"><font color=#666>PANDA dataset website</font></a></p>
-        </div>
-      </div>
-      <!-- Link list -->
-      <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
-        <div class="block">
-          <h4>Contact Us</h4>
-          <p><a href="http://www.luvision.net/"><font color=#666>Smart Imaging Laboratory</font></a></p>
-          <p>E-mail:</br>
-            <a href="mailto:"><font color=#666>zhang-xy18@mails.tsinghua.edu.cn</font></a></br>
-            <a href="mailto:"><font color=#666>fanglu@sz.tsinghua.edu.cn</font></a></p>
-          <p>Postal addresses: Room 607, C2 building, Nanshanzhiyuan. Park, Xueyuan Ave. Num. 1001, Nanshan District, Shenzhen, China.</p>
-        </div>
-      </div>
-      <!-- Link list -->
-      <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
-        <div class="block">
-          <h4>Acknowledgement</h4>
-          <p>This work is supported in part by Natural Science Foundation of China (NSFC) under contract No. 61722209 and 61860206003.</p>
-          <p>We thank <a href="http://www.aqueti.com/"><font color=#666>Aqueti（China）Technology Inc., Co.</font></a> for providing part of raw datasets.</p>
+  </section> -->
+  
+  <!--==========================================
+  =            Important Dates Section            =
+  ===========================================-->
+  
+  <!-- <section class="section"> 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"> 
+          <div class="section-title">
+            <h2>Technical Program (Tentative)</h2>
+          </div>
+          TBD
         </div>
       </div>
     </div>
-  </div>
-  <!-- Container End --> 
-</footer>
-<!-- Footer Bottom -->
-<footer class="footer-bottom"> 
-  <!-- Container Start -->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-12"> 
-        <!-- Copyright -->
-        <div class="copyright">
-          <p class="text-center">Industry-University-Research Collaboration is welcome via E-mail: <a href="mailto:fanglu@sz.tsinghua.edu.cn"><font color=#5672f9>fanglu@sz.tsinghua.edu.cn</font></a></br>
-            Smart Imaging Lab, TBSI, Tsinghua University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Copyright &copy; 2019 All rights reserved</p>
-            <br class="clear" />
+  </section> -->
+  
+  <!--==========================================
+  =            Organizers Section            =
+  ===========================================-->
+  
+  <section class="popular-deals section bg-gray"> 
+    <!-- Container Start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12"> 
+          <!-- Section title -->
+          <div class="section-title">
+            <h2>Organizers</h2>
+          </div>
+          <div class="row"> 
+        <!-- Organizers list -->
+            <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+              <div class="category-block">
+                <table width="100%" border="0" align="center">
+                  <tbody align="center">
+                    <tr height="200px">
+                      <td><img src="images/eccv2020/Fang.jpg" alt="" class="rounded-circle" width="60%"></td>
+                    </tr>
+                    <tr height="30px">
+                      <td><h5 class="text-center"><a href="http://luvision.net/">Lu Fang</a></h5></td>
+                    </tr>
+                    <tr height="60px">
+                      <td><p>Tsinghua-Berkeley Shenzhen Institute, Tsinghua University</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- /Organizers List --> 
+            <!-- Organizers list -->
+            <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+              <div class="category-block">
+                <table width="100%" border="0" align="center">
+                  <tbody align="center">
+                    <tr height="200px">
+                      <td><img src="images/eccv2020/Wang.jpg" alt="" class="rounded-circle" width="60%"></td>
+                    </tr>
+                    <tr height="30px">
+                      <td><h5 class="text-center"><a href="http://www.ee.tsinghua.edu.cn/publish/ee/4157/2010/20101217174758325963112/20101217174758325963112_.html">Shengjin Wang</a></h5></td>
+                    </tr>
+                    <tr height="60px">
+                      <td><p>Tsinghua University</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- /Organizers List --> 
+        <!-- Organizers list -->
+            <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+              <div class="category-block">
+                <table width="100%" border="0" align="center">
+                  <tbody align="center">
+                    <tr height="200px">
+                      <td><img src="images/eccv2020/Brady.jpg" alt="" class="rounded-circle" width="60%"></td>
+                    </tr>
+                    <tr height="30px">
+                      <td><h5 class="text-center"><a href="https://ece.duke.edu/faculty/david-brady">David J. Brady</a></h5></td>
+                    </tr>
+                    <tr height="60px">
+                      <td><p>Duke University</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- /Organizers List --> 
+        
+            <!-- Organizers list -->
+            <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+              <div class="category-block">
+                <table width="100%" border="0" align="center">
+                  <tbody align="center">
+                    <tr height="200px">
+                      <td><img src="images/eccv2020/Yang.jpg" alt="" class="rounded-circle" width="60%"></td>
+                    </tr>
+                    <tr height="30px">
+                      <td><h5 class="text-center"><a href="http://www.cs.cmu.edu/~fengy/">Feng Yang</a></h5></td>
+                    </tr>
+                    <tr height="60px">
+                      <td><p>Google Research</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- /Organizers List --> 
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Container End --> 
-  <!-- To Top -->
-  <div class="top-to"> <a id="top" class="" href=""><i class="fa fa-angle-up"></i></a> </div>
-</footer>
-
-<!-- JAVASCRIPTS --> 
-<script src="plugins/jquery/jquery.min.js"></script> 
-<script src="plugins/jquery-ui/jquery-ui.min.js"></script> 
-<script src="plugins/tether/js/tether.min.js"></script> 
-<script src="plugins/raty/jquery.raty-fa.js"></script> 
-<script src="plugins/bootstrap/dist/js/popper.min.js"></script> 
-<script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script> 
-<script src="plugins/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script> 
-<script src="plugins/slick-carousel/slick/slick.min.js"></script> 
-<script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script> 
-<script src="plugins/fancybox/jquery.fancybox.pack.js"></script> 
-<script src="plugins/smoothscroll/SmoothScroll.min.js"></script> 
-<script src="js/scripts.js"></script>
-</body>
-</html>
+    <!-- Container End --> 
+  </section>
+  
+  
+  <!--=====================================
+  =            Sponsor Section            =
+  ======================================-->
+  
+  <section class="section"> 
+    <!-- Container Start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"> 
+          <!-- Section title -->
+          <div class="section-title">
+            <h2>Sponsors</h2>
+          </div>
+          <p align="center">
+              <img src="images/home/logo1.png" width="20%">
+              <img src="images/home/logo_BBNC.png" width="20%">
+              <a href="http://www.aqueti.com/"><img src="images/home/aqueti.png" width="15%"></a>
+              <img src="images/home/camputer_lab.jpg" width="15%">
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Container End --> 
+  </section>
+  
+  <!--============================
+  =            Footer            =
+  =============================-->
+  
+  <footer class="footer section section-sm"> 
+    <!-- Container Start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0"> 
+          <!-- About -->
+          <div class="block about"> 
+            <!-- footer logo -->
+            <table width="200" border="0">
+              <tbody align="center">
+                <tr>
+                  <td colspan="2"><img src="images/demo.png" alt="" width="200px"></td>
+                </tr>
+                <tr>
+                  <td><img src="images/footer/THU.png" alt="" width="80px"></td>
+                  <!-- <td><img src="images/footer/UCB.png" alt="" width="80px"></td> -->
+                </tr>
+              </tbody>
+            </table>
+            <!-- description -->
+            <p class="alt-color"></p>
+          </div>
+        </div>
+        <!-- Link list -->
+        <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
+          <div class="block">
+            <h4>Useful Links</h4>
+            <p>&#9679; <a href="https://eccv2020.eu/"><font color=#666>European Conference on Computer Vision (ECCV) 2020</font></a></p>
+            <p>&#9679; <a href="http://cvpr2019.thecvf.com/"><font color=#666>IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019</font></a></p>
+            <p>&#9679; <a href="http://www.icme2019.org/"><font color=#666>IEEE International Conference on Multimedia and Expo (ICME) 2019</font></a></p>
+            <p>&#9679; <a href="http://www.panda-dataset.com/"><font color=#666>PANDA dataset website</font></a></p>
+          </ul>
+          </div>
+        </div>
+        <!-- Link list -->
+        <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
+          <div class="block">
+            <h4>Contact Us</h4>
+            <p><a href="http://www.luvision.net/"><font color=#666>LuVision</font></a></p>
+            <p>E-mail:</br>
+              <a href="mailto:"><font color=#666>zhang-xy18@mails.tsinghua.edu.cn</font></a></br>
+              <a href="mailto:"><font color=#666>fanglu@tsinghua.edu.cn</font></a></p>
+            <p>Postal addresses: FIT Building, Tsinghua University, Beijing, China.</p>
+          </div>
+        </div>
+        <!-- Link list -->
+        <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
+          <div class="block">
+            <h4>Acknowledgement</h4>
+            <p>This work is supported in part by Natural Science Foundation of China (NSFC) under contract No. 61722209 and 61860206003.</p>
+            <p>We thank <a href="http://www.aqueti.com/"><font color=#666>Aqueti（China）Technology Inc., Co.</font></a> for providing part of raw datasets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container End --> 
+  </footer>
+  <!-- Footer Bottom -->
+  <footer class="footer-bottom"> 
+    <!-- Container Start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-12"> 
+          <!-- Copyright -->
+          <div class="copyright">
+            <p class="text-center">Industry-University-Research Collaboration is welcome via E-mail: <a href="mailto:fanglu@tsinghua.edu.cn"><font color=#5672f9>fanglu@tsinghua.edu.cn</font></a></br>
+              Tsinghua University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Copyright &copy; luvision.net</p>
+              <br class="clear" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container End --> 
+    <!-- To Top -->
+    <div class="top-to"> <a id="top" class="" href=""><i class="fa fa-angle-up"></i></a> </div>
+  </footer>
+  
+  <!-- JAVASCRIPTS --> 
+  <script src="plugins/jquery/jquery.min.js"></script> 
+  <script src="plugins/jquery-ui/jquery-ui.min.js"></script> 
+  <script src="plugins/tether/js/tether.min.js"></script> 
+  <script src="plugins/raty/jquery.raty-fa.js"></script> 
+  <script src="plugins/bootstrap/dist/js/popper.min.js"></script> 
+  <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script> 
+  <script src="plugins/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script> 
+  <script src="plugins/slick-carousel/slick/slick.min.js"></script> 
+  <script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script> 
+  <script src="plugins/fancybox/jquery.fancybox.pack.js"></script> 
+  <script src="plugins/smoothscroll/SmoothScroll.min.js"></script> 
+  <script src="js/scripts.js"></script>
+  </body>
+  </html>
+  
