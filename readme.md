@@ -4,6 +4,6 @@ Web-page source code for:
 
 [PANDA Dataset](http://www.panda-dataset.com/)
 
-All website above are copyright by Smart Imaging Laboratory, Tsinghua-Berkeley Shenzhen Institute.
+All website above are copyright by [LuVision](http://www.luvision.net/).
 
 [Contact](mailto:wangxuey19@mails.tsinghua.edu.cn)
