@@ -86,9 +86,9 @@
                             <div class="row">
                                 <h1>Overview</h1>
                                 <!-- <h2>Dataset Overview</h2> -->
-                                <p>Depending on the data type, the PANDA dataset is split into 2 sub-sets: <code>PANDA-Image</code> and <code>PANDA-Video</code>. Among them, PANDA-Image is composed of 555 static giga-pixel images (390 for training, 165 for testing), and PANDA-Video is composed of 15 giga-pixel video sequences (10 videos for training, 5 videos for testing). Please refer to our <a href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_PANDA_A_Gigapixel-Level_Human-Centric_Video_Dataset_CVPR_2020_paper.pdf">paper</a> for detailed information of pictures and videos in each scene.</p>
+                                <p>Depending on the data type, the PANDA dataset is split into 3 sub-sets: <code>PANDA-Image</code>, <code>PANDA-Video</code> and <code>PANDA-Crowd</code>. Among them, PANDA-Image is composed of 555 static giga-pixel images (390 for training, 165 for testing), PANDA-Video is composed of 15 giga-pixel video sequences (10 videos for training, 5 videos for testing), and PANDA-Crowd is composed by 45 images labeled with human head bounding boxes, which are selected from 3 extremely crowded scenes that full of headcounts. Please refer to our <a href="https://arxiv.org/abs/2003.04852">paper on arXiv</a> for detailed information of pictures and videos in each scene.</p>
 
-                                <p>Since existing video compression formats such as H264 cannot handle the extremely high resolution of the PANDA dataset, the videos in panda-video are split into image frames (<em><strong>.jpg</strong> format</em> ) for storage. Moreever, from the point of view of data storage and download, in order to make the total volume of data not too large, swe take time sampling on the videos and the <strong>frame rate of the videos is 2 FPS.</strong></p>
+                                <p>Since existing video compression formats such as H264 cannot handle the extremely high resolution of the PANDA dataset, the videos in panda-video are split into image frames (<em><strong>.jpg</strong> format</em> ) for storage. Moreever, from the point of view of data storage and download, in order to make the total volume of data not too large, we take time sampling on the videos and the <strong>frame rate of the videos is 2 FPS.</strong></p> However, if you do need raw frame rate video frames (approx. 60GB per scene), please specify and explain your use in application email.
 
                                 <p>Before downloading the data, you need to read the copyright terms of the dataset, agree to our licence, and submit the application for using the dataset to us by email. Please refer to the Copyright & Download section below for details.</p>
 
@@ -101,10 +101,10 @@
                               
                                 
                                 <h1>Download</h1>
-                                <p>At present, we provide the data of image and video sequence of PANDA data set, as well as the bounding box (and corresponding labels) annotation of the training set. Group and interaction annotations are being prepared, please stay tuned.</p>
+                                <p>At present, we provide the data of image and video sequence of PANDA dataset, as well as the bounding box (and corresponding labels) annotation and group&interaction annotations of the training set.</p>
 
                                 <div class="section-space20 pinside20 bg-primary">
-                                    <p>To download the PANDA dataset, please agree on the license and provide the below information via email.  We will only take applications from organization email (please DO NOT use the emails from gmail/163/qq). Anyone who uses the PANDA  dataset should obey the license and send us an email for registration.</p>
+                                    <p>To download the PANDA dataset, please agree on the license and provide the below information via email.  We will only take applications from organization email (please DO NOT use the emails from gmail/163/qq). Anyone who uses the PANDA dataset should obey the license and send us an email for registration.</p>
                                     <h4>Please use the following email template:</h4>
                                     <p>
                                     -----------------------------------------------------------<br>
